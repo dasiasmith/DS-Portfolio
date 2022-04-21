@@ -1,42 +1,25 @@
-console.clear();
+// Homepage
+// Splitting();
 
-Splitting();
-
-
-// var demoButtons;
-
-// function start () {
+// Projects
+$('.slide-nav').on('click', function(e) {
+    e.preventDefault();
+    // get current slide
+    var current = $('.flex--active').data('slide'),
+      // get button data-slide
+      next = $(this).data('slide');
   
-//   // Add event "click" to "demo buttons"
-//   demoButtons = document.querySelectorAll ('.js-modify');
-//   for (var i = 0; i < demoButtons.length; i++) {
-//     demoButtons[i].addEventListener ('click', toggleEffect);
-//   }
+    $('.slide-nav').removeClass('active');
+    $(this).addClass('active');
   
-//   // Add event "click" to "save buttons"
-//   var saveButtons = document.querySelectorAll ('.js-save');
-//   for (var i = 0; i < saveButtons.length; i++) {
-//     saveButtons[i].addEventListener ('click', toggleActive);
-//   }
-  
-// }
-
-// // Toggle "effect" classes
-// function toggleEffect () {
-//   var target = document.querySelector (this.dataset.target);
-//       target.dataset.effect = this.dataset.effect;
-  
-//   for (var i= 0; i < demoButtons.length; i++) {
-//     demoButtons[i].classList.remove ('active');
-//   }
-  
-//   toggleActive.call (this);
-// }
-
-// // Toggle "active" class
-// function toggleActive () {
-//   this.classList.toggle ('active');
-// }
-
-// // Invoke "start ()" function
-// window.addEventListener ('load', start);
+    if (current === next) {
+      return false;
+    } else {
+      $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+      $('.flex--active').addClass('animate--end');
+      setTimeout(function() {
+        $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+        $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+      }, 800);
+    }
+  });

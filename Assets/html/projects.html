@@ -1,61 +1,85 @@
 <html lang = "en-us">
 <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="stylesheet" href="./Assets/css/style.scss"> -->
     <link rel="stylesheet" href="C:\Users\Dsmith\Desktop\DS-Portfolio\Assets\css\project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Dasia Smith | Full Stack Developer</title>
 </head>
-<div>
-<section class="wrapper">
-    <!-- BEGIN: card -->
-    <div class="card" data-effect="zoom">
-      <button class="card__save  js-save" type="button">
-        <i class="fa  fa-bookmark"></i>
-       </button>
-      <figure  class="card__image">
-        <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
-      </figure>
-      <div class="card__header">
-        <figure class="card__profile">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Neil_Armstrong.jpg" alt="Short description">
-        </figure>
+<body>
+
+  <div class="slider__warpper">
+    <div class="flex__container flex--pikachu flex--active" data-slide="1">
+      <div class="flex__item flex__item--left">
+        <div class="flex__content">
+          <p class="text--sub">Pokemon Gen I</p>
+          <h1 class="text--big">Pikachu</h1>
+          <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur.</p>
+        </div>
+        <p class="text__background">Pikachu</p>
       </div>
-      <div class="card__body">
-        <h3 class="card__name">Neil Armstrong</h3>
-        <p class="card__job">astronaut & engineer</p>
-        <p class="card__bio"> American astronaut, engineer, and the first person to walk on the Moon.</p>
-      </div>
-      <div class="card__footer">
-        <p class="card__date">Feb 10 2018</p>
-        <p class=""></p>
-      </div>
+      <div class="flex__item flex__item--right"></div>
+      <img class="pokemon__img" src="https://s4.postimg.org/fucnrdeq5/pikachu.png" />
     </div>
-    <!-- END: card -->
-  </section>
-  
-  <section class="wrapper"> 
-    <!-- BEGIN: card -->
-    <div class="card" data-effect="zoom">
-      <button class="card__save  js-save" type="button">
-        <i class="fa  fa-bookmark"></i>
-       </button>
-      <figure  class="card__image">
-        <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
-      </figure>
-      <div class="card__header">
-        <figure class="card__profile">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Neil_Armstrong.jpg" alt="Short description">
-        </figure>
+    <div class="flex__container flex--piplup animate--start" data-slide="2">
+      <div class="flex__item flex__item--left">
+        <div class="flex__content">
+          <p class="text--sub">Pokemon Gen IV</p>
+          <h1 class="text--big">Piplup</h1>
+          <p class="text--normal">Piplup is the Water-type Starter Pokémon of the Sinnoh region. It was introduced in Generation IV. Piplup has a strong sense of self-esteem. It seldom accepts food that people give because of its pride.</p>
+        </div>
+        <p class="text__background">Piplup</p>
       </div>
-      <div class="card__body">
-        <h3 class="card__name">Neil Armstrong</h3>
-        <p class="card__job">astronaut & engineer</p>
-        <p class="card__bio"> American astronaut, engineer, and the first person to walk on the Moon.</p>
-      </div>
-      <div class="card__footer">
-        <p class="card__date">Feb 10 2018</p>
-        <p class=""></p>
-      </div>
+      <div class="flex__item flex__item--right"></div>
+      <img class="pokemon__img" src="https://s4.postimg.org/sa9dl4825/pilup.png" />
     </div>
-    <!-- END: card -->
-</section>
+    <div class="flex__container flex--blaziken animate--start" data-slide="3">
+      <div class="flex__item flex__item--left">
+        <div class="flex__content">
+          <p class="text--sub">Pokemon Gen III</p>
+          <h1 class="text--big">Blaziken</h1>
+          <p class="text--normal">Blaziken is the Fire/Fighting-type Starter Pokémon of the Hoenn region, introduced in Generation III. Blaziken is a large, bipedal, humanoid bird-like Pokémon that resembles a rooster.</p>
+        </div>
+        <p class="text__background">Blaziken</p>
+      </div>
+      <div class="flex__item flex__item--right"></div>
+      <img class="pokemon__img" src="https://s4.postimg.org/6795hnlql/blaziken.png" />
+    </div>
+    <div class="flex__container flex--dialga animate--start" data-slide="4">
+      <div class="flex__item flex__item--left">
+        <div class="flex__content">
+          <p class="text--sub">Pokemon Gen IV</p>
+          <h1 class="text--big">Dialga</h1>
+          <p class="text--normal">Dialga is a Steel/Dragon-type Legendary Pokémon. Dialga is a sauropod-like Pokémon. It is mainly blue with some gray, metallic portions, such as its chest plate, which has a diamond in the center. It also has various, light blue lines all over
+            its body.</p>
+        </div>
+        <p class="text__background">Dialga</p>
+      </div>
+      <div class="flex__item flex__item--right"></div>
+      <img class="pokemon__img" src="https://s4.postimg.org/43yq9zlxp/dialga.png" />
+    </div>
+    <div class="flex__container flex--zekrom animate--start" data-slide="5">
+      <div class="flex__item flex__item--left">
+        <div class="flex__content">
+          <p class="text--sub">Pokemon Gen V</p>
+          <h1 class="text--big">Zekrom</h1>
+          <p class="text--normal">Zekrom is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao Trio, along with Reshiram and Kyurem. Zekrom is a large, black draconian Pokémon that seems to share its theme with its counterpart, Reshiram. It has piercing red eyes and
+            dark gray to black skin that seems to be armor-like.</p>
+        </div>
+        <p class="text__background">Zekrom</p>
+      </div>
+      <div class="flex__item flex__item--right"></div>
+      <img class="pokemon__img" src="https://s4.postimg.org/malmhgn9p/zekrom.png" />
+    </div>
+  </div>
+
+  <div class="slider__navi">
+    <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+    <a href="#" class="slide-nav" data-slide="2">piplup</a>
+    <a href="#" class="slide-nav" data-slide="3">blaziken</a>
+    <a href="#" class="slide-nav" data-slide="4">dialga</a>
+    <a href="#" class="slide-nav" data-slide="5">zekrom</a>
+  </div>
+
+  <script src='../js/script.js'></script>
+</body>
+</html>
