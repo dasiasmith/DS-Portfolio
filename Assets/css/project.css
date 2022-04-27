@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--dark: #252525;
+	--light: #b6bbbb;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .slider__navi {
 	position: absolute;
 	top: 50%;
@@ -138,51 +148,51 @@ body {
 /* Piplup */
 
 .flex--piplup .flex__item--left {
-	background: #3e9fe6;
+	background: var(--dark);
 }
 
 .flex--piplup .flex__item--right {
-	background: #d3eaef;
+	background: var(--light);
 }
 
 /* Pikachu */
 
 .flex--pikachu .flex__item--left {
-	background: #f8d41f;
+	background: var(--dark);
 }
 
 .flex--pikachu .flex__item--right {
-	background: #f4ecc5;
+	background: var(--light);
 }
 
 /* Blaziken */
 
 .flex--blaziken .flex__item--left {
-	background: #f64f37;
+	background: var(--dark);
 }
 
 .flex--blaziken .flex__item--right {
-	background: #ffebcd;
+	background: var(--light);
 }
 
 /* Dialga */
 
 .flex--dialga .flex__item--left {
-	background: #476089;
+	background: var(--dark);
 }
 
 .flex--dialga .flex__item--right {
-	background: #ade8f7;
+	background: var(--light);
 }
 
 /* Zekrom */
 
 .flex--zekrom .flex__item--left {
-	background: #424242;
+	background: var(--dark);
 }
 
 .flex--zekrom .flex__item--right {
-	background: #a7bcbb;
+	background: var(--light);
 }
 
 .flex__content {
