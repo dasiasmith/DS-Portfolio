@@ -22,4 +22,5 @@ $('.slide-nav').on('click', function(e) {
         $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
       }, 800);
     }
+    $(document).singlePageNav({filter: ':not(.external)'});
   });

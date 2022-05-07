@@ -5,14 +5,15 @@
 }
 
 :root {
-	--dark: #252525;
-	--light: #b6bbbb;
+	--dark: #000000;
+	--light: #d1d4d4;
 }
 
 a {
     color: white;
     text-decoration: none;
 }
+
 
 .slider__navi {
 	position: absolute;
@@ -103,7 +104,7 @@ body {
 	position: absolute;
 	left: 72px;
 	bottom: -60px;
-	color: rgba(0,0,0,0.05);
+	color: rgba(255, 255, 255, 0.05);
 	font-size: 170px;
 	font-weight: 700;
 }

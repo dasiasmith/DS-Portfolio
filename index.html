@@ -10,36 +10,64 @@
 </head>    
 
 <body>
+  <header>
+    <nav class="navbar fixed-top navbar-light bg-light navbar-expand-md">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="main-nav-collapse">
+            <a href="Assets\html\projects.html" class="nav__link">
+              <span class="nav__link--text" data-splitting>Work</span>
+              <span class="nav__link--text" data-splitting>Work</span>
+            </a>
+            <a href="#about" class="nav__link">
+              <span class="nav__link--text" data-splitting>About</span>
+              <span class="nav__link--text" data-splitting>About</span>
+            </a>
+            <a href="./Assets/Dasia Smith Resume.pdf" class="nav__link">
+              <span class="nav__link--text" data-splitting>Resume</span>
+              <span class="nav__link--text" data-splitting>Resume</span>
+            </a>
+            <a href="#contact" class="nav__link">
+              <span class="nav__link--text" data-splitting>Contact</span>
+              <span class="nav__link--text" data-splitting>Contact</span>
+            </a>
+          </div>
+      </div>        
+    </nav>
+  </header>
+
+
   <div class="flexStuff">
-    <div>
-      <img class="col-8 col-md-8 rotatingMe" src="./Assets/images/rotatingMe.gif" alt="rotating developer in the Matrix">
+    <div class="overlap">
+      <img class="rotatingMe" src="./Assets/images/rotatingMe.gif" alt="rotating developer in the Matrix">
+      <h2 class="topText">DASIA SMITH</h2>
+      <p class="shortBlob">Hi. Welcome to my portfolio.<br>I'm so glad you're here to see more about my work.</p>
     </div>
-      <nav>
-        <a href="Assets\html\projects.html" class="nav__link">
-          <span class="nav__link--text" data-splitting>Work</span>
-          <span class="nav__link--text" data-splitting>Work</span>
-        </a>
-        <a href="#" class="nav__link">
-          <span class="nav__link--text" data-splitting>About</span>
-          <span class="nav__link--text" data-splitting>About</span>
-        </a>
-        <a href="#" class="nav__link">
-          <span class="nav__link--text" data-splitting>Contact</span>
-          <span class="nav__link--text" data-splitting>Contact</span>
-        </a>
-      </nav>
   </div>
 
-  <div class="col-12 col-md-9 underDiv">
-    <h1>About</h1>
-    <p>Welcome to my page! My name is Dasia and I began my career journey wanting to become a graphic designer. I've always done art on the side but after joining a STEM club in high school and building cool models I went to school for engineering. 
-      After studying Civil Engineering at Georgia Tech I decided I wanted to combine my passions for product design and technical work (and my love for the Yellow Jackets) into a new career path and enrolled in a full-stack bootcamp.
-      I'm interested in delving into both front end and back end roles while also combining art using creative technology in my spare time. Join me in the journey that is my portfolio and feel free to check out my art :)</p>
-  </div>
+  <section id="about">
+    <div class="col-8 col-md-8" id="AboutMe">
+        <h1>ABOUT</h1>
+        <p>
+            Welcome to my page! My name is Dasia and I began my career journey wanting to become a graphic designer.
+            I've always done art on the side but after joining a STEM club in high school and building cool models I decided to go to school for Civil Engineering.
+            After graduating from Georgia Tech I decided I wanted to combine my passions for design and technical work 
+            into a new career path and enrolled in a full-stack bootcamp.
+            <br>
+            I'm interested in delving into both front end and back end roles with knowledge in the MERN stack. I also enjoy combining art into creative technology in my spare time.
+            Join me in the journey that is my portfolio.
+        </p>
+    </div>
+</section>
+  
 
   <div id="contact" class="container-fluid container text-center">
     <div class="col-12 col-md-12">
-        <h1>contact</h1>
+        <h1>CONTACT</h1>
         <hr id= "contactHr" class="rounded">
     </div>
     <div id="icons" class="icons row">

@@ -6,7 +6,7 @@ My professional portfolio which showcases a little bit of my most recent work al
 
 The following animation shows the web application's appearance and functionality:
 
-![PortfolioScreenshot](./Assets/images/Capture.PNG)
+![PortfolioScreenshot](./Assets/images/portfolio.png)
 
 ## Credits
 
